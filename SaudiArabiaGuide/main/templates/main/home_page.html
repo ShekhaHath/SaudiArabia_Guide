@@ -1,0 +1,216 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %} <title>Saudi Arabia Guide</title> {% endblock  %}
+{% block style %}
+ <link rel="stylesheet" href="{% static "style/home_page.css" %}">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ {% endblock  %}
+
+
+{% comment %} Content {% endcomment %}
+
+{% block content %}
+{% comment %} <div class="media">
+  <img src="{% static "images\sa-p1.webp" %}" class="img-fluid rounded mr-3" alt="Background Image">
+  <div class="media-body">
+    <h5 class="mt-0">Media heading</h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div> {% endcomment %}
+
+<header class="masthead">
+  <div class="container h-100 mt-3">
+    <div class="row h-100 align-items-center ">
+      <div class="col-12 text-center">
+        <h1 class="fw-light text-white mb-0">Saudi Arabia Guide</h1>
+        <p class="lead text-white mt-2">We're Here to Make Your Journey Easer!</p>
+        <div class="services">
+          <a href="{% url "main:distance_page" %}">Distance Calculation </a>
+          <a href="{% url "main:currency_exchange" %}"> Currency Exchange</a>
+          <a href="{% url "main:weather_informations" %}">Weather Informations</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page Content -->
+{% comment %} <section class="py-5">
+  <div class="container">
+    <h2 class="fw-light">Page Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis
+      blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat
+      reprehenderit expedita.</p>
+  </div>
+</section> {% endcomment %}
+
+
+
+
+<div class="container">
+  <div class="row mt-5"> 
+      <div class="col-4">
+          <div class="d-flex flex-column gap-3 h-100 justify-content-center">
+              <h3> A Journey Through Timeless Heritage and Modern Wonders.</h3>
+          </div>
+      </div>
+      <div class="col order-1 order-md-2">
+          <p>Embark on a journey to the heart of Arabia, where ancient heritage intertwines with modern marvels. 
+            Saudi Arabia, a realm of vibrant contrasts, invites you to explore its boundless beauty—from the rhythmic beats 
+            of traditional music to the tantalizing aroma of authentic cuisine. Discover the warmth of hospitality, the allure
+            of untouched landscapes, and a captivating blend of the old and the new. Join us on an odyssey where history and 
+            future entwine, unveiling the magic of Saudi Arabia—an extraordinary place waiting to be explored.
+          </p>
+      </div>
+  </div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-center">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="\static\images\Jeddah.jpg" class="img-responsive" alt="Jeddah">
+								</div>
+								<div class="thumb-content">
+									<h4>Jeddah</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="\static\images\Riyadh.jpg" class="img-responsive" alt="Riyadh">
+								</div>
+								<div class="thumb-content">
+									<h4>Riyadh</h4>
+									<p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>				
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="\static\images\Al-ula.jpg" class="img-responsive" alt="Al-ula">
+								</div>
+								<div class="thumb-content">
+									<h4>Al-ula</h4>
+									<p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/examples/images/cities/kuala-lumpur.png" class="img-responsive" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Kuala Lumpur</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/examples/images/cities/agra.png" class="img-responsive" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Agra</h4>
+									<p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/examples/images/cities/dubai.png" class="img-responsive" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Dubai</h4>
+									<p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/examples/images/cities/rio-de-janeiro.png" class="img-responsive" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Rio De Janeiro</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/examples/images/cities/giza.png" class="img-responsive" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Giza</h4>
+									<p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="/examples/images/cities/sydney.png" class="img-responsive" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Sydney</h4>
+									<p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+									<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+								</div>						
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div> 
+</div>
+
+{% endblock content %}
