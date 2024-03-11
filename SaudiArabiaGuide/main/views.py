@@ -16,3 +16,12 @@ def currency_exchange(request:HttpRequest):
 
 def weather_informations(request:HttpRequest):
     return render(request,'main/weather.html')
+
+def riyadh_page(request:HttpRequest):
+    return render(request,'main/Riyadh.html')
+
+def jeddah_page(request:HttpRequest):
+    return render(request,'main/Jeddah.html')
+
+def alula_page(request:HttpRequest):
+    return render(request,'main/Al-ula.html')

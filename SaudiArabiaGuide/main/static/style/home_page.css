@@ -1,7 +1,3 @@
-body{
-    background-color: #867171;
-}
-
 img{
     width: 100%;
     height: 400px;
@@ -141,3 +137,5 @@ img{
 .carousel-indicators li.active {	
 	background: #555555;
 }
+
+
