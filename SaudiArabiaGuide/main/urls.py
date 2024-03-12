@@ -11,4 +11,5 @@ urlpatterns = [
     path('Riyadh/',views.riyadh_page,name="riyadh_page"),
     path('Jeddah/',views.jeddah_page,name="jeddah_page"),
     path('Al-ula/',views.alula_page,name="alula_page"),
+    path('Abha/',views.abha_page,name="abha_page"),
 ]

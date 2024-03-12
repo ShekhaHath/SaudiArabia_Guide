@@ -25,3 +25,6 @@ def jeddah_page(request:HttpRequest):
 
 def alula_page(request:HttpRequest):
     return render(request,'main/Al-ula.html')
+
+def abha_page(request:HttpRequest):
+    return render (request, 'main/Abha.html')
