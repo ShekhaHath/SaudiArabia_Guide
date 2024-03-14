@@ -11,24 +11,23 @@
  
  <style>
 	body{
-		background-color: rgb(220, 220, 220);
-
-    body {
+		  background-color: rgb(220, 220, 220); 
       margin: 0;
       font-family: 'Muli', sans-serif;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       overflow-x: hidden;
     }
+
     
     .carousel {
       width: 100%;
       overflow-x: scroll;
       padding: 30px 0;
-      padding-top: 80px;
       position: relative;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
+      
     }
     
     .carousel__container {
@@ -36,8 +35,7 @@
       display: flex;
       justify-content: center;
       width:100%;
-      {% comment %} background-color:rgba(175,158,136,0.1); {% endcomment %}
-      background-color:#edf0f0;
+      background-color:#edf0f0; 
       border-radius:20px;
       padding-bottom:50px;
     }
@@ -96,6 +94,7 @@
         from(rgba(0, 0, 0, 0.9)),
         to(rgba(0, 0, 0, 0))
       );
+
       background: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.9) 0%,
@@ -129,15 +128,45 @@
       padding-top: 180px;
     }
     
+
+    {% comment %} العناوين ع الكاردز  {% endcomment %}
     .carousel-item__details .carousel-item__details--title,
     .carousel-item__details--subtitle {
       color: #fff;
+      font-family:'Times New Roman', Times, serif;
+      text-shadow: 2px 2px 8px black;
       margin: 5px 0;
+      font-size: 20px;
     }    
 		
-	}
 
- </style>
+  .container h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+  .container p {
+    font-size: large;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+ .categories__title{
+  font-family:'Times New Roman', Times, serif;
+  font-size:xx-large;
+  color:black;
+  text-shadow: 2px 2px 8px #8cb6ba;
+}
+
+
+
+.dark .carousel__container{
+background-color :#b5baba;
+}
+
+</style>
+
+
  
  {% endblock  %}
 
@@ -161,7 +190,7 @@
 
 <!-- second section-->
 <div class="container">
-  <div class="row mt-5"> 
+  <div class="row mt-5 "> 
     <div class="col-4">
       <div class="d-flex flex-column gap-3 h-100 justify-content-center">
         <h3> A Journey Through Timeless Heritage and Modern Wonders.</h3>
@@ -182,8 +211,8 @@
 
 <!-- third section-->
 
-    <section class="carousel mt-0  overflow-hidden">
-      <h2 class="categories__title">Cities</h2>
+    <section class="carousel overflow-hidden">
+      <h2 class="categories__title">Destinations in Saudi Arabia</h2> 
       <a href="{% url "main:riyadh_page" %}"><div class="carousel__container">
         <div class="carousel-item">
           <img
@@ -193,7 +222,6 @@
           />
           <div class="carousel-item__details">
             <h5 class="carousel-item__details--title">Riyadh</h5>
-            <h6 class="carousel-item__details--subtitle">Date and Duration</h6>
           </div>
         </div></a>
         <a href="{% url "main:alula_page" %}"><div class="carousel-item">
@@ -204,7 +232,6 @@
           />
           <div class="carousel-item__details">
             <h5 class="carousel-item__details--title">Al-ula</h5>
-            <h6 class="carousel-item__details--subtitle">Date and Duration</h6>
           </div>
         </div></a>
         <a href="{% url "main:jeddah_page" %}"><div class="carousel-item">
@@ -215,7 +242,6 @@
           />
           <div class="carousel-item__details">
             <h5 class="carousel-item__details--title">Jeddah</h5>
-            <h6 class="carousel-item__details--subtitle">Date and Duration</h6>
           </div>
         </div></a>
 
@@ -227,7 +253,6 @@
           />
           <div class="carousel-item__details">
             <h5 class="carousel-item__details--title">Abha</h5>
-            <h6 class="carousel-item__details--subtitle">Date and Duration</h6>
           </div>
         </div></a>
       </div>

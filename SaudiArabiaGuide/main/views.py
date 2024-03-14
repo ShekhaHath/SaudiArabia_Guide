@@ -1,5 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpRequest,HttpResponse
+
+
+
+from .helpers import distanceKm
 
 
 # Create your views here.
@@ -9,7 +13,15 @@ def home_page(request:HttpRequest):
 
 
 def distance_page(request:HttpRequest):
-    return render(request,'main/distance.html')
+    distance = None
+    
+    if request.method == "POST":
+        fromCity = request.POST["fromCity"]
+        toCity = request.POST["toCity"]
+        distance = distanceKm(fromCity, toCity)
+       
+    print(distance) 
+    return render(request,'main/distance.html', {"distance" : distance})
 
 def currency_exchange(request:HttpRequest):
     return render(request,'main/currency.html')
@@ -28,3 +40,21 @@ def alula_page(request:HttpRequest):
 
 def abha_page(request:HttpRequest):
     return render (request, 'main/Abha.html')
+
+
+def dark_mode_view(requset: HttpRequest):
+
+    response = redirect("main:home_page")
+    response.set_cookie("mode", "dark")
+
+    return response
+
+
+def light_mode_view(requset: HttpRequest):
+
+    response = redirect("main:home_page")
+    response.set_cookie("mode", "light")
+
+    return response
+
+

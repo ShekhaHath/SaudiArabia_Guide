@@ -37,31 +37,38 @@
 	}
 	
 	.dark {
-	background: #110f16;
+	background-color: #4c4d4d;
 	}
-	
 	
 	.light {
 	background-color: rgb(220, 220, 220);
 	}
 	
+	.dark .light{
+		background-color: #4c4d4d;
+	}
+
 	a, a:hover {
 	text-decoration: none;
 	transition: color 0.3s ease-in-out;
 	}
 	
+
+	<!--  عنوان-->
+
 	#pageHeaderTitle {
-	margin: 2rem 0;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 2.5rem;
+		margin: 2rem 0;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2.5rem;
+
 	}
+
 	
 	/* Cards */
 	.postcard {
 	flex-wrap: wrap;
 	display: flex;
-	
 	box-shadow: 0 4px 21px -12px rgba(179, 162, 162, 0.66);
 	border-radius: 10px;
 	margin: 0 0 2rem 0;
@@ -117,6 +124,7 @@
 	background-color: #d6c9c9;
 	transition: width 0.2s ease;
 	}
+
 	
 	.postcard__text {
 	padding: 1.5rem;
@@ -150,7 +158,6 @@
 	  cursor: default;
 	  user-select: none;
 	  transition: background-color 0.3s;
-	
 	  &:hover {
 		background: rgba(83, 83, 83, 0.8);
 	  }
@@ -171,6 +178,10 @@
 	border: #18151f;
 	}
 	
+	.dark:before{
+		background-image: linear-gradient(-70deg, #757373, transparent 50%);
+	}
+
 	&:hover .postcard__bar {
 	width: 100px;
 	}
@@ -198,6 +209,7 @@
 	  padding: 3rem;
 	  width: 100%;
 	}
+
 	
 	.media.postcard__text:before {
 	  content: "";
@@ -387,44 +399,68 @@
 		);
 	}
 	}
+
+	.container h3{
+		font-size:xx-large;
+		
+	}
+
+	.dark .container h3{
+		color:white;
+	}
+	
+	.container p {
+		font-size: large;
+		margin-bottom: 10%;
+		margin-top: 2%;
+	}
+
+	.styled-header {
+		font-family:'Times New Roman', Times, serif;
+		font-size: 4rem;
+		color: #ffffff;
+		text-shadow: 3px 5px 2px rgba(0, 0, 0, 1);
+	}
 	
 	
 </style>
+
 {% endblock  %}
 {% block content %}
 <header class="masthead">
-    <div class="container h-100 mt-3">
+    <div class="container h-100 ">
       <div class="row h-100 align-items-center ">
         <div class="col-12 text-start">
-          <h1 class="fw-light text-white mb-0">Riyadh</h1>
+          <h1 class="fw-light text-white styled-header ">Riyadh</h1>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
-  <div class="row mt-5"> 
-      <div class="col-4">
-          <div class="d-flex flex-column gap-3 h-100 justify-content-center">
-              <h3> A Journey Through Timeless Heritage and Modern Wonders.</h3>
-          </div>
-      </div>
-      <div class="col order-1 order-md-2">
-          <p>Embark on a journey to the heart of Arabia, where ancient heritage intertwines with modern marvels. 
-            Saudi Arabia, a realm of vibrant contrasts, invites you to explore its boundless beauty—from the rhythmic beats 
-            of traditional music to the tantalizing aroma of authentic cuisine. Discover the warmth of hospitality, the allure
-            of untouched landscapes, and a captivating blend of the old and the new. Join us on an odyssey where history and 
-            future entwine, unveiling the magic of Saudi Arabia—an extraordinary place waiting to be explored.
-          </p>
-      </div>
+<!-- SECOND-->
+ 
+	<div class="container">
+	<div class="row mt-5  mb-5"> 
+	  <div class="col-4">
+		<div class="d-flex flex-column gap-3 h-100 justify-content-start mt-3">
+		  <h3> Live the Modern Life to its Fullest</h3>
+		</div>
+	  </div>
+	  <div class="col order-1 order-md-2">
+		<p>In Riyadh, the birthplace of Saudi Arabia, history and modernity intertwine.
+			 Explore ancient palaces, bustling malls, and serene sand dunes. Indulge in international cuisines or savor authentic Saudi flavors. 
+			Cultural events and entertainment abound, offering endless excitement. Discover Riyadh, where tradition meets innovation.
+		</p>
+	  </div>
+	</div>
   </div>
+
 
   <!--third -->
 	
 <section class="light">
 	<div class="container py-2">
-		<div class="h1 text-center text-dark" id="pageHeaderTitle">Historical Places</div>
-
+		<div class="h1 text-center text-dark" id="pageHeaderTitle">ATTRACTIONS</div>
 		<article class="postcard light blue">
 			<a class="postcard__img_link" href="#">
 				<img class="postcard__img" src="{% static "/images/Diriyah.jpg" %}" />
@@ -439,8 +475,7 @@
 				<div class="postcard__preview-txt">Diriyah is a historic town located on the outskirts of Riyadh and is the original home of the Saudi royal family. It is a UNESCO World Heritage Site known for its mud-brick architecture and historical significance. Diriyah played a crucial role in the early history of the Kingdom and is a key symbol of Saudi Arabia's cultural heritage.</div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play blue">
-                        <!-- حطي رابط قوقل ماب حق الموقع-->
-						<a href="https://www.google.com/maps/place/Diriyah/@24.7490984,46.5400172,13z/data=!3m1!4b1!4m6!3m5!1s0x3e2ee0fbc64eabeb:0x2ee9dd9e06719893!8m2!3d24.7481198!4d46.5363345!16zL20vMDJoN3Bu?entry=ttu" target="_blank"  ><i class="fas fa-play mr-2"></i>Location</a>
+						<a href="https://www.google.com/maps/place/Diriyah/@24.7490984,46.5400172,13z/data=!3m1!4b1!4m6!3m5!1s0x3e2ee0fbc64eabeb:0x2ee9dd9e06719893!8m2!3d24.7481198!4d46.5363345!16zL20vMDJoN3Bu?entry=ttu" target="_blank"  ><i class="mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>
@@ -459,7 +494,7 @@
 				<div class="postcard__preview-txt">On the cliffs of Tuwaik Mountain with its distinguishing dry soil-free surface, you can enjoy the desert environment view with its arid features. You will notice samar trees and acacias spreading over the land of the valley, while ghodi trees and pole plants cover the majority of the high fixed sand dunes. The characteristics of the carved mountains with their intriguing sight tell the story of their long resistance to erosion and survival against time factors. Exploring the area, you may also discover some snails and marine life fossils spreading here and there indicating the fact that the area had once been a marine habitat. Finally, winter-time is so special at Edge of the World when the beautiful nature is accompanied by the cold weather and rainy season.</div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play red">
-						<a href="https://www.google.com/maps?s=web&lqi=ChplZGdlIG9mIHRoZSB3b3JsZCBsb2NhdGlvbki2v_SZ-rWAgAhaLhAAEAEQAhADEAQYABgBGAIYAyIaZWRnZSBvZiB0aGUgd29ybGQgbG9jYXRpb26SAQtoaWtpbmdfYXJlYaoBYhABKh4iGmVkZ2Ugb2YgdGhlIHdvcmxkIGxvY2F0aW9uKAAyHhABIhonj_PjWo6SH8c-Yugz6mpqcsEhzlFQ8HjFazIeEAIiGmVkZ2Ugb2YgdGhlIHdvcmxkIGxvY2F0aW9u&phdesc=QzG04fCbyLA&vet=12ahUKEwi9gbWs7OyEAxVdhf0HHXolB9kQ1YkKegQISRAB..i&cs=1&um=1&ie=UTF-8&fb=1&gl=sa&sa=X&geocode=KcvdfbkrRSk-Mbm-W_m4F-K6&daddr=Sadus+13967" target="_blank"><i class="fas fa-play mr-2"></i>Location</a>
+						<a href="https://www.google.com/maps?s=web&lqi=ChplZGdlIG9mIHRoZSB3b3JsZCBsb2NhdGlvbki2v_SZ-rWAgAhaLhAAEAEQAhADEAQYABgBGAIYAyIaZWRnZSBvZiB0aGUgd29ybGQgbG9jYXRpb26SAQtoaWtpbmdfYXJlYaoBYhABKh4iGmVkZ2Ugb2YgdGhlIHdvcmxkIGxvY2F0aW9uKAAyHhABIhonj_PjWo6SH8c-Yugz6mpqcsEhzlFQ8HjFazIeEAIiGmVkZ2Ugb2YgdGhlIHdvcmxkIGxvY2F0aW9u&phdesc=QzG04fCbyLA&vet=12ahUKEwi9gbWs7OyEAxVdhf0HHXolB9kQ1YkKegQISRAB..i&cs=1&um=1&ie=UTF-8&fb=1&gl=sa&sa=X&geocode=KcvdfbkrRSk-Mbm-W_m4F-K6&daddr=Sadus+13967" target="_blank"><i class=" mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>
@@ -477,12 +512,11 @@
 					The tickets prices are 69 SR for adults and 23 SR for kids under 10 years.The highest mosque in the Kingdom.After living the experience of viewing Riyadh from above, head to the highest mosque in the Kingdom of Saudi Arabia, King Abdullah Mosque, on the 77th floor. Do not forget to treat yourself by shopping in the finest world-class and local stores in the Kingdom Center. </div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play green">
-						<a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYPDIGCAMQRRg8MgYIBBBFGDzSAQczNDdqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=sa&sa=X&geocode=KXWZPLYs5y4-MQUrH2GxL5fS&daddr=Kingdom+Centre,+Al+Olaya,+Riyadh+12214" target="_blank"><i class="fas fa-play mr-2"></i>Location</a>
+						<a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYPDIGCAMQRRg8MgYIBBBFGDzSAQczNDdqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=sa&sa=X&geocode=KXWZPLYs5y4-MQUrH2GxL5fS&daddr=Kingdom+Centre,+Al+Olaya,+Riyadh+12214" target="_blank"><i class="mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>
 		</article>
-		
 	</div>
 </section>
 

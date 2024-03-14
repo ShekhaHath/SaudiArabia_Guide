@@ -42,12 +42,15 @@
 	}
 	
 	.dark {
-	background: #110f16;
+	background-color: #4c4d4d;
 	}
-	
 	
 	.light {
 	background-color: rgb(220, 220, 220);
+	}
+	
+	.dark .light{
+		background-color: #4c4d4d;
 	}
 	
 	a, a:hover {
@@ -66,7 +69,6 @@
 	.postcard {
 	flex-wrap: wrap;
 	display: flex;
-	
 	box-shadow: 0 4px 21px -12px rgba(179, 162, 162, 0.66);
 	border-radius: 10px;
 	margin: 0 0 2rem 0;
@@ -142,7 +144,7 @@
 	flex-flow: row wrap;
 	font-size: 14px;
 	margin: 20px 0 0 0;
-		padding: 0;
+	padding: 0;
 	justify-content: center;
 	
 	{% comment %} الزر الي داخل الكاردز {% endcomment %}
@@ -392,6 +394,28 @@
 		);
 	}
 	}
+
+	.container h3{
+		font-size:xx-large;
+		
+	}
+	
+	.container p {
+		font-size: large;
+		margin-bottom: 10%;
+		margin-top: 2%;
+	}
+	.styled-header {
+		font-family:'Times New Roman', Times, serif;
+		font-size: 4rem;
+		color: #ffffff;
+		text-shadow: 3px 5px 2px rgba(0, 0, 0, 1);
+	}
+
+	.dark:before {
+		background-image: linear-gradient(-70deg, #757373, transparent 50%);
+	}
+	
 	
 	
 </style>
@@ -401,34 +425,34 @@
     <div class="container h-100 mt-3">
       <div class="row h-100 align-items-center ">
         <div class="col-12 text-start">
-          <h1 class="fw-light text-black mb-0">Jeddah</h1>
+          <h1 class="fw-light text-white styled-header">Jeddah</h1>
         </div>
       </div>
     </div>
   </header>
-
-  <div class="container">
-  <div class="row mt-5"> 
-      <div class="col-4">
-          <div class="d-flex flex-column gap-3 h-100 justify-content-center">
-              <h3> A Journey Through Timeless Heritage and Modern Wonders.</h3>
-          </div>
-      </div>
-      <div class="col order-1 order-md-2">
-          <p>Embark on a journey to the heart of Arabia, where ancient heritage intertwines with modern marvels. 
-            Saudi Arabia, a realm of vibrant contrasts, invites you to explore its boundless beauty—from the rhythmic beats 
-            of traditional music to the tantalizing aroma of authentic cuisine. Discover the warmth of hospitality, the allure
-            of untouched landscapes, and a captivating blend of the old and the new. Join us on an odyssey where history and 
-            future entwine, unveiling the magic of Saudi Arabia—an extraordinary place waiting to be explored.
-          </p>
-      </div>
+<!-- second-->
+<div class="container">
+	<div class="row mt-5 "> 
+	  <div class="col-4">
+		<div class="d-flex flex-column gap-3 h-100 justify-content-start mt-3">
+		  <h3> A seaside city filled with beauty</h3>
+		</div>
+	  </div>
+	  <div class="col order-1 order-md-2">
+		<p>In Jeddah, UNESCO-celebrated heritage awaits, from the enchanting 
+			"Historical Jeddah" district to the antique balconies and stone walkways. 
+			Witness breathtaking sunsets over the Red Sea shores and explore vibrant coral reefs through magical diving experiences. 
+			With year-round splendors both on land and underwater, Jeddah promises unforgettable adventures.
+		</p>
+	  </div>
+	</div>
   </div>
 
   <!--third -->
 	
 <section class="light">
 	<div class="container py-2">
-		<div class="h1 text-center text-dark" id="pageHeaderTitle">Historical Places</div>
+		<div class="h1 text-center text-dark" id="pageHeaderTitle">attractions</div>
 
 		<article class="postcard light blue">
 			<a class="postcard__img_link" href="#">
@@ -442,8 +466,7 @@
 				<div class="postcard__preview-txt">Al-Balad, the historic heart of Jeddah, stands as a living testament to the city's rich past and vibrant culture. Wandering through its narrow alleys, visitors encounter beautifully preserved coral-stone buildings adorned with intricately carved wooden windows, showcasing the traditional architecture of the region. The bustling Souk Al-Alawi adds to the allure, offering a sensory journey with its vibrant market stalls, aromatic spices, and handmade crafts. As the sun sets, the historic district comes to life with the echoes of muezzins' calls to prayer and the warm glow of traditional lanterns, creating an enchanting ambiance that captures the essence of Jeddah's timeless charm.</div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play blue">
-                        <!-- حطي رابط قوقل ماب حق الموقع-->
-						<a href=""><i class="fas fa-play mr-2"></i>Location</a>
+						<a href=""><i class="mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>
@@ -462,7 +485,7 @@
 				<div class="postcard__preview-txt">Jeddah's art scene flourishes with a variety of galleries, creating a vibrant cultural tapestry. From contemporary showcases to traditional Saudi art, these spaces celebrate diverse artistic expressions. Nestled in Al-Balad and modern districts alike, Jeddah's galleries offer a captivating glimpse into the city's dynamic and ever-evolving art landscape.</div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play red">
-						<a href=""><i class="fas fa-play mr-2"></i>Location</a>
+						<a href=""><i class="mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>
@@ -479,7 +502,7 @@
 				<div class="postcard__preview-txt"> a mesmerizing aquatic attraction that invites visitors into the enchanting world beneath the waves. With a diverse collection of marine life, including vibrant coral reefs and exotic sea creatures, the aquarium provides an immersive experience for all ages. From educational exhibits to thrilling underwater tunnels, Fakieh Aquarium offers a captivating journey into the wonders of the ocean, making it a must-visit destination for marine enthusiasts and families seeking a memorable aquatic adventure in Jeddah. </div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play green">
-						<a href="https://www.google.com/maps?sca_esv=d24f8c82e0b70a04&sxsrf=ACQVn0_hcxg7dTCkCxJj2Tqy1xpQ1qO_Fg:1710185545894&gs_lp=Egxnd3Mtd2l6LXNlcnAiAmZhKgIIATIXEC4YgAQYigUYkQIYsQMYgwEYxwEY0QMyERAuGIAEGIoFGJECGMcBGK8BMhAQABiABBiKBRhDGLEDGIMBMgoQABiABBiKBRhDMhAQABiABBiKBRhDGLEDGIMBMgsQABiABBixAxiDATIOEAAYgAQYigUYsQMYgwEyDhAAGIAEGIoFGLEDGIMBMg4QABiABBiKBRixAxiDATIOEAAYgAQYigUYsQMYgwEyIBAuGIAEGIoFGJECGMcBGK8BGJcFGNwEGN4EGOAE2AEDSNpBUMQEWOswcAd4AZABAJgB5wKgAYsMqgEFMi0yLjO4AQHIAQD4AQL4AQGYAg2gApUdqAIVwgIKEAAYRxjWBBiwA8ICBhCzARiFBMICExAAGIAEGIoFGEMY6gIYtALYAQHCAhkQLhiABBiKBRhDGMcBGK8BGOoCGLQC2AEBwgIQEAAYAxiPARjqAhi0AtgBAsICEBAuGAMYjwEY6gIYtALYAQLCAhEQABiABBiKBRiRAhixAxiDAcICFhAuGIAEGIoFGEMYsQMYgwEYxwEY0QPCAhQQLhiABBiKBRixAxiDARjHARjRA8ICCxAAGIAEGIoFGJECwgILEAAYgAQYigUYsQPCAgUQABiABMICCxAuGIAEGMcBGNEDwgIQEC4YgAQYigUYQxjHARivAcICEBAuGIAEGIoFGEMYsQMY1ALCAggQABiABBixA8ICFxAuGIMBGMcBGJECGLEDGNEDGIAEGIoFwgIREC4YgAQYsQMYgwEYxwEY0QPCAiYQLhiDARjHARiRAhixAxjRAxiABBiKBRiXBRjcBBjeBBjgBNgBA8ICJhAuGIAEGIoFGJECGLEDGIMBGMcBGNEDGJcFGNwEGN4EGOAE2AEDmAMkiAYBkAYIugYECAEYB7oGBggCEAEYCroGBggDEAEYFJIHCzcuMC4yLjMuNy0xoAezQQ&um=1&ie=UTF-8&fb=1&gl=sa&sa=X&geocode=KVVj2fAm28MVMQfLEZNtZd8l&daddr=Al+Kurnaysh+Br+Rd%D8%8C+Al+Nawras%D8%8C+Next+to,+Al+Kuranaysh+Rd,+Jeddah+23413" target="_blank"><i class="fas fa-play mr-2"></i>Location</a>
+						<a href="https://www.google.com/maps?sca_esv=d24f8c82e0b70a04&sxsrf=ACQVn0_hcxg7dTCkCxJj2Tqy1xpQ1qO_Fg:1710185545894&gs_lp=Egxnd3Mtd2l6LXNlcnAiAmZhKgIIATIXEC4YgAQYigUYkQIYsQMYgwEYxwEY0QMyERAuGIAEGIoFGJECGMcBGK8BMhAQABiABBiKBRhDGLEDGIMBMgoQABiABBiKBRhDMhAQABiABBiKBRhDGLEDGIMBMgsQABiABBixAxiDATIOEAAYgAQYigUYsQMYgwEyDhAAGIAEGIoFGLEDGIMBMg4QABiABBiKBRixAxiDATIOEAAYgAQYigUYsQMYgwEyIBAuGIAEGIoFGJECGMcBGK8BGJcFGNwEGN4EGOAE2AEDSNpBUMQEWOswcAd4AZABAJgB5wKgAYsMqgEFMi0yLjO4AQHIAQD4AQL4AQGYAg2gApUdqAIVwgIKEAAYRxjWBBiwA8ICBhCzARiFBMICExAAGIAEGIoFGEMY6gIYtALYAQHCAhkQLhiABBiKBRhDGMcBGK8BGOoCGLQC2AEBwgIQEAAYAxiPARjqAhi0AtgBAsICEBAuGAMYjwEY6gIYtALYAQLCAhEQABiABBiKBRiRAhixAxiDAcICFhAuGIAEGIoFGEMYsQMYgwEYxwEY0QPCAhQQLhiABBiKBRixAxiDARjHARjRA8ICCxAAGIAEGIoFGJECwgILEAAYgAQYigUYsQPCAgUQABiABMICCxAuGIAEGMcBGNEDwgIQEC4YgAQYigUYQxjHARivAcICEBAuGIAEGIoFGEMYsQMY1ALCAggQABiABBixA8ICFxAuGIMBGMcBGJECGLEDGNEDGIAEGIoFwgIREC4YgAQYsQMYgwEYxwEY0QPCAiYQLhiDARjHARiRAhixAxjRAxiABBiKBRiXBRjcBBjeBBjgBNgBA8ICJhAuGIAEGIoFGJECGLEDGIMBGMcBGNEDGJcFGNwEGN4EGOAE2AEDmAMkiAYBkAYIugYECAEYB7oGBggCEAEYCroGBggDEAEYFJIHCzcuMC4yLjMuNy0xoAezQQ&um=1&ie=UTF-8&fb=1&gl=sa&sa=X&geocode=KVVj2fAm28MVMQfLEZNtZd8l&daddr=Al+Kurnaysh+Br+Rd%D8%8C+Al+Nawras%D8%8C+Next+to,+Al+Kuranaysh+Rd,+Jeddah+23413" target="_blank"><i class="mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>

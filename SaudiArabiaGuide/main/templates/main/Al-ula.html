@@ -37,12 +37,16 @@
 	}
 	
 	.dark {
-	background: #110f16;
+	background-color: #4c4d4d;
 	}
 	
 	
 	.light {
 	background-color: rgb(220, 220, 220);
+	}
+	
+	.dark .light{
+		background-color: #4c4d4d;
 	}
 	
 	a, a:hover {
@@ -387,6 +391,25 @@
 		);
 	}
 	}
+
+	.container h3{
+		font-size:xx-large;
+		
+	}
+	
+	.container p {
+		font-size: large;
+		margin-bottom: 10%;
+		margin-top: 2%;
+	}
+
+	.styled-header {
+		font-family:'Times New Roman', Times, serif;
+		font-size: 4rem;
+		color: #ffffff;
+		text-shadow: 3px 5px 2px rgba(0, 0, 0, 1);
+	}
+	
 	
 	
 </style>
@@ -396,34 +419,38 @@
     <div class="container h-100 mt-3">
       <div class="row h-100 align-items-center ">
         <div class="col-12 text-start">
-          <h1 class="fw-light text-white mb-0">Al-Ula</h1>
+          <h1 class="fw-light text-white styled-header">Al-Ula</h1>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
-  <div class="row mt-5"> 
-      <div class="col-4">
-          <div class="d-flex flex-column gap-3 h-100 justify-content-center">
-              <h3> A Journey Through Timeless Heritage and Modern Wonders.</h3>
-          </div>
-      </div>
-      <div class="col order-1 order-md-2">
-          <p>Embark on a journey to the heart of Arabia, where ancient heritage intertwines with modern marvels. 
-            Saudi Arabia, a realm of vibrant contrasts, invites you to explore its boundless beauty—from the rhythmic beats 
-            of traditional music to the tantalizing aroma of authentic cuisine. Discover the warmth of hospitality, the allure
-            of untouched landscapes, and a captivating blend of the old and the new. Join us on an odyssey where history and 
-            future entwine, unveiling the magic of Saudi Arabia—an extraordinary place waiting to be explored.
-          </p>
-      </div>
+<!--second -->
+
+<div class="container">
+	<div class="row mt-5 "> 
+	  <div class="col-4">
+		<div class="d-flex flex-column gap-3 h-100 justify-content-start mt-3">
+		  <h3> A Glamorous Destination that Makes Your Eyes Sparkle</h3>
+		</div>
+	  </div>
+	  <div class="col order-1 order-md-2">
+		<p>
+			
+AlUla, a historical treasure, boasts Hegra, the first Saudi site on UNESCO's World Heritage List. 
+Its ancient landmarks hide stories dating back to the first century BC. Warm hospitality and innovative
+ cuisine await amidst stunning desert landscapes.
+ Experience rock climbing, hiking, and camping under starry skies, alongside seasonal events blending history with modern flair.
+		</p>
+	  </div>
+	</div>
   </div>
 
   <!--third -->
 	
 <section class="light">
 	<div class="container py-2">
-		<div class="h1 text-center text-dark" id="pageHeaderTitle">Historical Places</div>
+		<div class="h1 text-center text-dark" id="pageHeaderTitle">attractions</div>
 
 		<article class="postcard light blue">
 			<a class="postcard__img_link" href="#">
@@ -432,15 +459,13 @@
 			<div class="postcard__text t-dark">
 				<h1 class="postcard__title blue"><a href="#">Jabal Al-Fil</a></h1>
 				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-					</time>
 				</div>
 				<div class="postcard__bar"></div>
 				<div class="postcard__preview-txt">You can sit and admire the reflection of the bright sun on Jabal Al-Fil in an enjoyable day outing. You can also watch the sunset behind the mountains in intimate moments accompanied by friends and family, on ground seating areas designed for relaxation and meditation. There is an international restaurant that completes your day with its delicious dishes, and free parking to park your car safely.</div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play blue">
                         <!-- حطي رابط قوقل ماب حق الموقع-->
-						<a href="https://www.google.com/maps/dir//jabal+al-fil+location/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15a452ac507f782f:0x295d71dd0d147d21?sa=X&ved=1t:3061&ictx=111" target="_blank"  ><i class="fas fa-play mr-2"></i>Location</a>
+						<a href="https://www.google.com/maps/dir//jabal+al-fil+location/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15a452ac507f782f:0x295d71dd0d147d21?sa=X&ved=1t:3061&ictx=111" target="_blank"  ><i class="mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>
@@ -459,7 +484,7 @@
 				<div class="postcard__preview-txt">Natural beauty stimulates constructional beauty, therefore, Maraya Concert Hall was designed to be an artistic piece of work, with its mirrors reflecting the amazing natural beauty elements of AlUla surrounding the building.  It is approximately 9,740 square meters, and it is in The Guinness Book of Records for being the biggest reflective building in the world.</div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play red">
-						<a href="https://www.google.com/maps/dir//Al+Atheeb+43552/@26.7431407,37.7824099,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x15a5b19c2b81fff9:0xd06c2532c97e13fe!2m2!1d37.8648114!2d26.7431645?entry=ttu" target="_blank"><i class="fas fa-play mr-2"></i>Location</a>
+						<a href="https://www.google.com/maps/dir//Al+Atheeb+43552/@26.7431407,37.7824099,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x15a5b19c2b81fff9:0xd06c2532c97e13fe!2m2!1d37.8648114!2d26.7431645?entry=ttu" target="_blank"><i class="mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>
@@ -477,7 +502,7 @@
                     Its ancient houses, alleys and unique design impress everyone who visits it, as its people built it in a maze-like way, consisting of 900 houses. The adjoining mud buildings constituted a means of protection from enemy attacks. </div>
 				<ul class="postcard__tagbox">
 					<li class="tag__item play green">
-						<a href="https://www.google.com/maps/dir//ula+old+town+location/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15a5ab92c56fe9f9:0x274d664dc6ce5a7b?sa=X&ved=1t:3061&ictx=111" target="_blank"><i class="fas fa-play mr-2"></i>Location</a>
+						<a href="https://www.google.com/maps/dir//ula+old+town+location/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x15a5ab92c56fe9f9:0x274d664dc6ce5a7b?sa=X&ved=1t:3061&ictx=111" target="_blank"><i class="mr-2"></i>Location</a>
 					</li>
 				</ul>
 			</div>

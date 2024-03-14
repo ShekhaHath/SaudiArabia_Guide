@@ -32,3 +32,13 @@ img{
     font-size: 15px;
   }
 
+  .container h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.container p {
+    font-size: large;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
