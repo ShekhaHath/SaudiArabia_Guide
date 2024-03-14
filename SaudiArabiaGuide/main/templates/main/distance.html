@@ -69,9 +69,23 @@
         color:white;
     }
 
-    .distance{
-        color:white;
+
+    .result{
+        display:flex;
+        background-color:rgba(0, 0, 0, 0.737);
+        border-radius:10px;
+        width:500px;
+        height: 40px;
+        justify-content:center; 
+        margin-left:90px;
     }
+
+    .distance h2{
+        color:white;
+        font-family:'Times New Roman', Times, serif;
+    }
+
+
 </style>
 
 {% endblock  %}
@@ -101,9 +115,10 @@
                     </div>
                 </div>
                </form>
-
+            <div class="result">
             {% if distance %}
-               <span class="distance"><h2> the distance is {{distance}} KM </h2></span>
+               <span class="distance"><h2> The distance is: <span class="red">{{distance}} KM</span></h2></span>
             {% endif %}
+            </div>
 </div>
 {% endblock  %}

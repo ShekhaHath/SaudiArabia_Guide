@@ -178,8 +178,8 @@
 	border: #18151f;
 	}
 	
-	.dark:before{
-		background-image: linear-gradient(-70deg, #757373, transparent 50%);
+	.dark::before{
+		background: linear-gradient(-70deg, #757373, transparent 50%);
 	}
 
 	&:hover .postcard__bar {
@@ -460,17 +460,13 @@
 	
 <section class="light">
 	<div class="container py-2">
-		<div class="h1 text-center text-dark" id="pageHeaderTitle">ATTRACTIONS</div>
-		<article class="postcard light blue">
+		<div class="h1 text-center {% if request.COOKIES.mode == 'dark' %}text-white{% endif %}" id="pageHeaderTitle">ATTRACTIONS</div>
+			<article class="postcard light blue">
 			<a class="postcard__img_link" href="#">
 				<img class="postcard__img" src="{% static "/images/Diriyah.jpg" %}" />
 			</a>
 			<div class="postcard__text t-dark">
 				<h1 class="postcard__title blue"><a href="#">Diriyah (Ad-Dir'iyah)</a></h1>
-				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-					</time>
-				</div>
 				<div class="postcard__bar"></div>
 				<div class="postcard__preview-txt">Diriyah is a historic town located on the outskirts of Riyadh and is the original home of the Saudi royal family. It is a UNESCO World Heritage Site known for its mud-brick architecture and historical significance. Diriyah played a crucial role in the early history of the Kingdom and is a key symbol of Saudi Arabia's cultural heritage.</div>
 				<ul class="postcard__tagbox">
@@ -486,10 +482,6 @@
 			</a>
 			<div class="postcard__text t-dark">
 				<h1 class="postcard__title red"><a href="#">Edge of the World</a></h1>
-				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-					</time>
-				</div>
 				<div class="postcard__bar"></div>
 				<div class="postcard__preview-txt">On the cliffs of Tuwaik Mountain with its distinguishing dry soil-free surface, you can enjoy the desert environment view with its arid features. You will notice samar trees and acacias spreading over the land of the valley, while ghodi trees and pole plants cover the majority of the high fixed sand dunes. The characteristics of the carved mountains with their intriguing sight tell the story of their long resistance to erosion and survival against time factors. Exploring the area, you may also discover some snails and marine life fossils spreading here and there indicating the fact that the area had once been a marine habitat. Finally, winter-time is so special at Edge of the World when the beautiful nature is accompanied by the cold weather and rainy season.</div>
 				<ul class="postcard__tagbox">
@@ -505,8 +497,6 @@
 			</a>
 			<div class="postcard__text t-dark">
 				<h1 class="postcard__title green"><a href="#">Sky Bridge at Kingdom Center</a></h1>
-				<div class="postcard__subtitle small">
-				</div>
 				<div class="postcard__bar"></div>
 				<div class="postcard__preview-txt">Getting to the Sky Bridge.Visitors can take an elevator to the 99th floor where the entrance to the Sky Bridge and the ticket counter are between “Mont Blanc” and “Carolina Herrera” stores. 
 					The tickets prices are 69 SR for adults and 23 SR for kids under 10 years.The highest mosque in the Kingdom.After living the experience of viewing Riyadh from above, head to the highest mosque in the Kingdom of Saudi Arabia, King Abdullah Mosque, on the 77th floor. Do not forget to treat yourself by shopping in the finest world-class and local stores in the Kingdom Center. </div>

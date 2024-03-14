@@ -1,15 +1,14 @@
-
 from geopy.geocoders import OpenCage
 from geopy.distance import geodesic
 from datetime import timedelta
+from .api_keys import currency_api_key
+from .api_keys import distance_api_key
+from .api_keys import weather_api_key
 
-currency_api_key ='f9dfef6de04032ab725229aa'
-distance_api_key="de1ab31118234db58f090ca128321103"
-weather_api_key = "79caab6c9f9ff678015cd1e369a683f3"
 
+# distance method :
 
 geolocator = OpenCage(user_agent="SaudiArabiaGuide", api_key=distance_api_key)
-# distance method :
 
 def distanceKm(from_city: str, to_city: str):
     global distance

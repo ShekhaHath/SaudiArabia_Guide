@@ -1,8 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpRequest,HttpResponse
 
-
-
 from .helpers import distanceKm
 
 
@@ -19,7 +17,9 @@ def distance_page(request:HttpRequest):
         fromCity = request.POST["fromCity"]
         toCity = request.POST["toCity"]
         distance = distanceKm(fromCity, toCity)
-       
+        if distance is not None:
+            distance = round(distance,2)
+            
     print(distance) 
     return render(request,'main/distance.html', {"distance" : distance})
 
