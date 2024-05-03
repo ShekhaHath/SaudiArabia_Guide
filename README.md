@@ -17,4 +17,5 @@ Websites And Applications To Enhance Your Journey:
 
 - Access a curated list of websites and applications to assist you throughout your journey in Saudi Arabia.
 
-  
+Note :
+  You can find the CLI version of this project here :https://github.com/ShekhaHath/UNIT-1_PROJECT
